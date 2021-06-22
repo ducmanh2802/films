@@ -1,4 +1,4 @@
-package com.manhdd.films.model;
+package com.manhdd.film.model;
 
 public class Film {
     private String title;
