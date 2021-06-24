@@ -15,8 +15,8 @@ import vn.techmaster.book.model.Film;
 @RequestMapping("/api")
 public class RESTController {
 
-  @GetMapping("/books")
-  public ResponseEntity<List<Film>> listBooks() {
+  @GetMapping("/films")
+  public ResponseEntity<List<Film>> listFilms() {
     List<Film> films = List.of(new Film("Gone with the Wind", " Victor Fleming, David O. Selznick ", 1939),
         new Film("Bố Già", " Trấn Thành", 2020), new Film("Parasite", " Bong Joon-ho", 2019),
         new Film("Money Heist", " Álex Pina", 2018));

@@ -1,6 +1,8 @@
 <template>
-  <h1>Film List</h1>
-  <FilmList :films="films" />
+  <div>
+    <h1>Film List</h1>
+    <FilmList films="films" />
+  </div>
 </template>
 
 <script>
@@ -8,23 +10,23 @@ import FilmList from "./components/FilmList.vue";
 import axios from "axios";
 export default {
   components: {
-    BookList,
+    FilmList,
   },
   data() {
     return {
-      books: [],
+      films: [],
       loading: false,
       error: null,
     };
   },
   methods: {
-    async fetchBooks() {
+    async fetchFilms() {
       try {
         this.error = null;
         this.loading = true;
-        const url = `http://localhost:8080/api/books`;
+        const url = `http://localhost:8080/api/films`;
         const response = await axios.get(url);
-        this.books = response.data;
+        this.films = response.data;
       } catch (err) {
         console.log(err);
       }
