@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>Film List</h1>
-    <FilmList films="films" />
+    <FilmList :films="films" />
   </div>
 </template>
 
