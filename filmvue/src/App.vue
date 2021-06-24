@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="filmlist">
     <h1>Film List</h1>
     <FilmList :films="films" />
   </div>
@@ -48,7 +48,15 @@ export default {
   color: #2c3e50;
   margin-top: 20px;
 }
+.filmlist {
+  background: #2c3e50;
+  padding: 20px;
+}
 li {
   list-style: none;
+  color: rgb(17, 170, 43);
+}
+h1 {
+  color: red;
 }
 </style>
