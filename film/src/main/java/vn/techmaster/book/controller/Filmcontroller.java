@@ -14,7 +14,7 @@ import vn.techmaster.book.model.Film;
 public class Filmcontroller {
     @GetMapping("/")
     public String showHomepage() {
-        return "index";
+        return "film";
     }
 
     @GetMapping("/films")
